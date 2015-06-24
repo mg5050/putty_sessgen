@@ -1,0 +1,36 @@
+PuTTY session auto-gen
+
+    A program that populates the PuTTY session
+    list automatically using input from files. 
+
+(c) Michael Gonzalez 2015
+MIT License
+
+
+============================
+        HOW TO USE
+============================
+
+A .reg file is created for a manual import of the sessions within this program's directory.
+
+Automatic import can also be enabled within the source code.
+
+Files are formatted using the following syntax.
+
+# This is a comment
+# SiteID IPAddress
+site1 67.52.31.21
+site2 127.0.0.1
+myPC localhost
+NJIT afs4.njit.edu
+
+
+=====================================
+        COMMAND LINE (optional)
+=====================================
+
+python putty_sessgen.py FILENAME
+
+or
+
+python putty_sessgen.py SITEID IPADDRESS
